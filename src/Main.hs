@@ -30,6 +30,4 @@ formatBlock i =
 
 tableRows :: [[Int]]
 tableRows =
-  do
-    i <- [0 .. 31]
-    return (map (\x -> i + (32 * x)) [0 .. 3])
+  [take 4 [x, (x + 32)..] | x <- [0..31]]
