@@ -22,7 +22,7 @@ displayChar :: Int -> Char
 displayChar i =
   if i < 32 || i == 127
   then ' '
-  else toEnum . fromEnum $ i
+  else toEnum i
 
 formatBlock :: Int -> String
 formatBlock i =
