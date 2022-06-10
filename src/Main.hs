@@ -1,7 +1,7 @@
 module Main where
 
-import Data.List
-import Text.Printf
+import Data.List (intercalate)
+import Text.Printf (printf)
 
 main :: IO ()
 main = putStrLn asciiTable
